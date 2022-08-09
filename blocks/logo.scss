@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.log__title {
+    margin-bottom: 10px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    color: #F1CDB3;
+}
+
+.logo__text {
+    display: block;
+
+    font-family: $add-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
