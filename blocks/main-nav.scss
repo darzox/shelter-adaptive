@@ -1,10 +1,76 @@
 @import "../variables.scss";
 @import "site-list.scss";
 
+.main-nav {
+    position: relative;
+}
+
+.main-nav--closed .main-nav__list {
+    display: none;
+}
+
+.main-nav--closed .logo {
+    display: none;
+}
+
+.main-nav--opened .logo {
+    margin-top: 30px;
+}
+
+.main-nav--opened .main-nav__list {
+    display: block;
+}
+
+.main-nav--opened .main-nav__wrapper {
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    background-color: #292929;
+}
+
+.main-nav--opened .main-nav__toggle {
+    position: static;
+}
+
+.main-nav--opened .main-nav__list {
+    margin-top: 158px;
+
+    text-align: center;
+}
+
+.main-nav__toggle {
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    left: -30px;
+
+    margin: 0;
+    padding: 0;
+
+    width: 30px;
+    height: 22px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+    border-style: none;
+}
+
 .main-nav--closed .main-nav__toggle::before {
     content: "";
 
     position: absolute;
+    top: 0;
+    left: 0;
 
     width: 30px;
     height: 2px;
@@ -13,9 +79,58 @@
     box-shadow: 0 8px 0 0 #F1CDB3, 0 16px 0 0 #F1CDB3;
 }
 
+.main-nav--opened .main-nav__toggle::before {
+    content: "";
+
+    position: absolute;
+    top: auto;
+    left: auto;
+    ;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #F1CDB3;
+    box-shadow: 0 8px 0 0 #F1CDB3, 0 16px 0 0 #F1CDB3;
+
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+.our-page {
+    .main-nav--closed .main-nav__toggle::before {
+        background-color: #000000;
+        box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    }
+
+    .main-nav--opened .main-nav__toggle::before {
+        background-color: #000000;
+        box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    }
+
+    .main-nav--opened .main-nav__wrapper {
+        background-color: #fcfcfc;
+    }
+}
 
 
 @media (min-width: $tablet-size) {
+    .main-nav .logo {
+        display: none;
+    }
+
+    .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav__toggle::before {
+        display: none;
+    }
+
+    .main-nav--closed .main-nav__list {
+        display: flex;
+    }
+
     .main-nav__list {
         display: flex;
         width: 445px;

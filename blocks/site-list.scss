@@ -11,8 +11,8 @@
     font-family: $add-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 32px;
+    line-height: 51px;
     color: #CDCDCD;
 }
 
@@ -29,5 +29,12 @@
 
     .site-list__item--current a {
         color: #292929;
+    }
+}
+
+@media (min-width: $tablet-size) {
+    .site-list__item a {
+        font-size: 15px;
+        line-height: 24px;
     }
 }

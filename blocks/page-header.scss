@@ -7,10 +7,30 @@
     background-color: #211F20;
 }
 
+.our-page {
+    .page-header {
+        background-image: none;
+        background-color: #FFFFFF;
+    }
+}
+
 .wrapper {
     margin: 0 auto;
-    padding: 0 40px;
+    padding-left: 10px;
+    padding-right: 53px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+@media (min-width: $tablet-size) {
+    .wrapper {
+        margin: 0 auto;
+        padding: 0 40px;
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
 }
