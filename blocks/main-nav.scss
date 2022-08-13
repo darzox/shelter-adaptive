@@ -1,0 +1,8 @@
+@import "../variables.scss";
+@import "site-list.scss";
+
+.main-nav__list {
+    display: flex;
+    width: 445px;
+    justify-content: space-between;
+}

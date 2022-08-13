@@ -1,2 +1,15 @@
 @import "../variables.scss";
+@import "logo.scss";
+@import "main-nav.scss";
 
+.page-header {
+    background-image: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    background-color: #211F20;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}

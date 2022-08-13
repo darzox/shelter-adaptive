@@ -1,6 +1,11 @@
 @import "../variables.scss";
 
-.log__title {
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__title {
     margin-bottom: 10px;
 
     font-family: $main-font;
@@ -20,4 +25,12 @@
     font-size: 13px;
     line-height: 15px;
     color: #FFFFFF;
+}
+
+.our-page .logo__title {
+    color: #545454;
+}
+
+.our-page .logo__text {
+    color: #292929;
 }
