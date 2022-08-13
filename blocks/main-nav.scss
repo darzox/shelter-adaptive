@@ -1,6 +1,17 @@
 @import "../variables.scss";
 @import "site-list.scss";
 
+.main-nav--closed .main-nav__toggle::before {
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #F1CDB3;
+    box-shadow: 0 8px 0 0 #F1CDB3, 0 16px 0 0 #F1CDB3;
+}
 
 
 
