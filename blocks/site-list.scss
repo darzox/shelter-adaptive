@@ -1,10 +1,8 @@
 @import "../variables.scss";
+@import "../mixins.scss";
 
 .site-list {
-    margin:0;
-    padding: 0;
-
-    list-style: none;
+    @include reset-list;
 }
 
 .site-list__item a {
@@ -28,6 +26,7 @@
     .site-list__item a {
         color: #545454;
     }
+
     .site-list__item--current a {
         color: #292929;
     }
