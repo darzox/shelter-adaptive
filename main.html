@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.theme.default.min.css">
     <title>Shelter</title>
 </head>
 
@@ -69,20 +71,32 @@
             </div>
         </section>
         <section class="our-friends slider">
-            <h2 class="slider__heading heading">Our friends who are looking for a house</h2>
-            <ul class="slider__list">
-                <li class="slider__item">
-                    <img src="#" alt="" class="slider__image">
-                    <span class="slider__pet-name">Katrine</span>
-                    <a href="#" class="slider__link button">Learn more</a>
-                </li>
-                <li class="slider__item">
-                    <img src="#" alt="" class="slider__image">
-                    <span class="slider__pet-name">Katrine</span>
-                    <a href="#" class="slider__link button">Learn more</a>
-                </li>
-            </ul>
-            <a href="our-pets.html" class="our-friends__link button"></a>
+            <div class="our-friends__wrapper">
+                <h2 class="slider__heading heading">Our friends who are looking for a house</h2>
+                <ul class="slider__list owl-carousel owl-theme">
+                    <li class="slider__item item">
+                        <img src="assets/images/pets-katrine.png" alt="Katrine" class="slider__image">
+                        <span class="slider__pet-name">Katrine</span>
+                        <a href="#" class="slider__link button">Learn more</a>
+                    </li>
+                    <li class="slider__item item">
+                        <img src="assets/images/pets-jennifer.png" alt="Jennifer" class="slider__image">
+                        <span class="slider__pet-name">Jennifer</span>
+                        <a href="#" class="slider__link button">Learn more</a>
+                    </li>
+                    <li class="slider__item item">
+                        <img src="assets/images/pets-woody.png" alt="Woody" class="slider__image">
+                        <span class="slider__pet-name">Woddy</span>
+                        <a href="#" class="slider__link button">Learn more</a>
+                    </li>
+                    <li class="slider__item item">
+                        <img src="assets/images/pets-timmy.jpg" alt="Timmy" class="slider__image">
+                        <span class="slider__pet-name">Timmy</span>
+                        <a href="#" class="slider__link button">Learn more</a>
+                    </li>
+                </ul>
+                <a href="our-pets.html" class="our-friends__link button"></a>
+            </div>
         </section>
         <section class="help">
             <h2 class="help__heading heading">How you can help our shelter</h2>
@@ -140,6 +154,24 @@
         </div>
         <img src="#" alt="dog" class="page-footer__image">
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1280: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.slider__heading {
+    @include reset-heading;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    color: #545454;
+}
