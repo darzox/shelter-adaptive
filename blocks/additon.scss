@@ -1,0 +1,83 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.in-addition {
+    background-color: #F6F6F6;
+}
+
+.in-addition__heading {
+    @include reset-heading;
+    
+    margin-top: 42px;
+    margin-bottom: 20px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    color: #545454;
+    text-align: center;
+}
+
+.in-additon__text {
+    display: block;
+    margin-bottom: 20px;
+
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #545454;
+    text-align: center;
+
+}
+
+.in-addition__card-number {
+    position: relative;
+
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    width: 281px;
+    height: 33px;
+    box-sizing: border-box;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px; 
+    letter-spacing: 0.06em;
+    color:#545454;
+    text-align: right;
+    vertical-align: bottom;
+
+    background-color: #f1cdb3;
+    border-radius: 9px;
+}
+
+.in-addition__card-number::before {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+
+    content: "";
+    width: 30px;
+    height: 23px;
+
+    background-image: url("../assets/icons/credit-card.svg");
+
+}
+
+.in-additon__info {
+    font-family: $add-font;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B2B2B2;
+}
