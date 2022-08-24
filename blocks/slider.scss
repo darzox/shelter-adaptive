@@ -4,10 +4,73 @@
 .slider__heading {
     @include reset-heading;
 
+    margin-bottom: 42px;
+
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 32px;
     color: #545454;
+    text-align: center;
+}
+
+.slider__list {
+    @include reset-list;
+
+}
+
+.slider__item {
+    width: 270px;
+    height: 435px;
+}
+
+.slider__image {
+    margin-bottom: 30px; 
+    width: 270px;
+    height: 270px;
+}
+
+.slider__pet-name {
+    display: block;
+    margin-bottom: 30px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #545454;
+    text-align: center;
+}
+
+.slider__link {
+    width: 187px;
+    height: 52px;
+    margin: 0 auto;
+    padding: 15px 45px;
+
+    font-size: 17px;
+    line-height: 22px;
+    text-decoration: none;
+
+    border: 2px solid #F1CDB3;
+    background-color: transparent;
+}
+
+.slider__link:hover {
+    background-color: #F1CDB3;
+}
+
+.owl-nav {
+    margin: 0 auto;
+    width: 270px;
+    height: 52px;
+}
+.owl-prev {
+
+}
+
+.owl-next {
+
 }
