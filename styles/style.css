@@ -661,3 +661,160 @@ body {
     order: -1; }
   .in-additon__info {
     margin-bottom: 100px; } }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contacts__heading {
+  margin-bottom: 40px;
+  width: 300px;
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-align: center; }
+
+.contacts__email {
+  position: relative;
+  display: block;
+  margin-bottom: 45px;
+  margin-left: 40px;
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #F1CDB3;
+  text-decoration: none; }
+
+.contacts__email::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 40px;
+  height: 26px;
+  background-image: url("../assets/icons/mail.svg");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.contacts__phone {
+  position: relative;
+  display: block;
+  margin-left: 40px;
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #F1CDB3;
+  text-decoration: none; }
+
+.contacts__phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 40px;
+  height: 32px;
+  background-image: url("../assets/icons/phone.svg");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+@media (min-width: 768px) {
+  .contacts__heading {
+    width: 248px;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left; }
+  .contacts__email::before {
+    left: -65px; }
+  .contacts__phone::before {
+    left: -65px; } }
+
+.addresses {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.addresses__heading {
+  margin-bottom: 40px;
+  width: 238px;
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-align: center; }
+
+.addresses__text {
+  position: relative;
+  display: block;
+  width: 200px;
+  margin-bottom: 45px;
+  margin-left: 40px;
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #F1CDB3;
+  text-decoration: none; }
+
+.addresses__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 40px;
+  height: 26px;
+  background-image: url("../assets/icons/pin.svg");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+@media (min-width: 768px) {
+  .addresses__heading {
+    width: 260px;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left; }
+  .addresses__text {
+    margin-bottom: 20px; } }
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20; }
+
+.page-footer__contacts {
+  margin-top: 30px;
+  margin-bottom: 45px; }
+
+@media (min-width: 768px) {
+  .page-footer__container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 65px; }
+  .page-footer__contacts {
+    margin-right: 10%;
+    margin-bottom: 0; }
+  .page-footer__image {
+    width: 300px;
+    height: 310px; } }
+
+@media (min-width: 1280px) {
+  .page-footer {
+    padding-top: 40px;
+    flex-direction: row;
+    justify-content: center; }
+  .page-footer__container {
+    margin-right: 160px;
+    margin-bottom: 0; }
+  .page-footer__contacts {
+    margin-right: 160px; } }
