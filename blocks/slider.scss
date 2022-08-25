@@ -115,3 +115,18 @@
 
     background-image: url("../assets/icons/arrow-right.svg");
 }
+
+@media (min-width: $tablet-size) {
+    .owl-prev {
+        position: absolute;
+        top: 25%;
+        left: -28px;
+
+    }
+    
+    .owl-next {
+        position: absolute;
+        top: 25%;
+        right: -28px;
+    }
+}
