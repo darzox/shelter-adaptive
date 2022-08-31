@@ -408,7 +408,8 @@ body {
   line-height: 22px;
   text-decoration: none;
   border: 2px solid #F1CDB3;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
 
 .slider__link:hover {
   background-color: #F1CDB3; }
@@ -952,6 +953,9 @@ body {
   width: 100vw;
   height: 100vh; }
 
+.popup-open {
+  display: block; }
+
 .popup__image {
   display: none; }
 
@@ -1048,7 +1052,8 @@ body {
   background-size: 12px;
   background-color: transparent;
   border: 2px solid #F1CDB3;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: pointer; }
 
 @media (min-width: 768px) {
   .popup__wrapper {
