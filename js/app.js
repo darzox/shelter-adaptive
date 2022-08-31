@@ -102,6 +102,7 @@ function createPopup(nameOfPet) {
             popContainer.appendChild(popupButtonClose);
             popupButtonClose.addEventListener("click", ()=> {
                 popupSection.classList.toggle("popup-open");
+                popupSection.remove();
             });
         }
     })
