@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__title {
+    margin-bottom: 10px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    color: #F1CDB3;
+}
+
+.logo__text {
+    display: block;
+
+    font-family: $add-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.our-page .logo__title {
+    color: #545454;
+}
+
+.our-page .logo__text {
+    color: #292929;
+}

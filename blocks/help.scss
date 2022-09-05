@@ -1,0 +1,230 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.help {
+
+    background-color: #FFFFFF;
+}
+
+.help__heading {
+    @include reset-heading;
+
+    margin-top: 42px;
+    margin-bottom : 42px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    color: #545454;
+    text-align: center;
+}
+
+.help__list {
+    @include reset-list;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 42px;
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.help__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #545454;
+}
+
+.help__item {
+    position: relative;
+
+    width: 130px;
+    height: 87px;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.help__item:last-of-type{
+    margin-bottom: 0;
+}
+
+.help__item--pet-food::before {
+    content: "";
+    width:40px;
+    height: 50px;
+    background-image: url("../assets/icons/Vector.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.help__item--transport::before {
+    content: "";
+    width:50px;
+    height: 50px;
+    background-image: url("../assets/icons/transportation.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.help__item--toys::before {
+    content: "";
+    width:50px;
+    height: 50px;
+    background-image: url("../assets/icons/toys.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.help__item--bowls-cups::before {
+    content: "";
+    width:50px;
+    height: 48px;
+    background-image: url("../assets/icons/bowls-and-cups.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.help__item--shampoos::before {
+    content: "";
+    width: 27px;
+    height: 50px;
+    background-image: url("../assets/icons/shampoos.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.help__item--vitamins::before {
+    content: "";
+    width: 50px;
+    height: 45px;
+    background-image: url("../assets/icons/vitamins.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.help__item--medicines::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/icons/medicines.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.help__item--collars-leashes::before {
+    content: "";
+    width: 50px;
+    height: 44px;
+    background-image: url("../assets/icons/collars-or-leashes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.help__item--sleeping-areas::before {
+    content: "";
+    width: 47px;
+    height: 50px;
+    background-image: url("../assets/icons/sleeping-area.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: $tablet-size) {
+    .help__heading {
+        margin-top: 80px;
+        margin-bottom: 60px;
+
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .help__list {
+        margin-bottom: 100px;
+        padding: 0 69px;
+        width: 768px;
+    }
+
+    .help__text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .help__item {
+        width: 170px;
+        height: 113px;
+    }
+
+    .help__item--pet-food::before {
+        content: "";
+        width:48px;
+        height: 60px;   
+    }
+
+    .help__item--transport::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+    }
+
+    .help__item--toys::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+    }
+
+    .help__item--bowls-cups::before {
+        content: "";
+        width: 60px;
+        height: 57px;
+    }
+
+    .help__item--shampoos::before {
+        content: "";
+        width: 31px;
+        height: 60px;
+    }
+
+    .help__item--vitamins::before {
+        content: "";
+        width: 60px;
+        height: 54px;
+    }
+
+    .help__item--medicines::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+    }
+
+    .help__item--collars-leashes::before {
+        content: "";
+        width: 60px;
+        height: 52px;
+    }
+
+    .help__item--sleeping-areas::before {
+        content: "";
+        width: 56px;
+        height: 60px;
+    }
+}
+
+@media (min-width: $desktop-size) {
+    .help__list {
+        padding: 0;
+        width: 1026px;
+        justify-content: space-around;
+    }
+}

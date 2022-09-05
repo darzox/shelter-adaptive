@@ -1,0 +1,40 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.site-list {
+    @include reset-list;
+}
+
+.site-list__item a {
+    text-decoration: none;
+
+    font-family: $add-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+    color: #CDCDCD;
+}
+
+.site-list__item--current a {
+    color: #FAFAFA;
+
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.our-page {
+    .site-list__item a {
+        color: #545454;
+    }
+
+    .site-list__item--current a {
+        color: #292929;
+    }
+}
+
+@media (min-width: $tablet-size) {
+    .site-list__item a {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}

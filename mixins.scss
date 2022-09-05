@@ -1,0 +1,16 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+@mixin reset-heading {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin reset-parag {
+    margin: 0;
+    padding: 0;
+}

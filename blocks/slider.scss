@@ -1,0 +1,134 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.slider__heading {
+    @include reset-heading;
+
+    margin-bottom: 42px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    color: #545454;
+    text-align: center;
+}
+
+.slider__list {
+    @include reset-list;
+
+}
+
+.slider__item {
+    margin: 0 auto;
+
+    width: 270px;
+    height: 435px;
+}
+
+.slider__image {
+    margin-bottom: 30px; 
+    width: 270px;
+    height: 270px;
+}
+
+.slider__pet-name {
+    display: block;
+    margin-bottom: 30px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #545454;
+    text-align: center;
+}
+
+.slider__link {
+    width: 187px;
+    height: 52px;
+    margin: 0 auto;
+    padding: 15px 45px;
+
+    font-size: 17px;
+    line-height: 22px;
+    text-decoration: none;
+
+    border: 2px solid #F1CDB3;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.slider__link:hover {
+    background-color: #F1CDB3;
+}
+
+.owl-nav {
+    margin: 0 auto;
+    margin-bottom: 42px;
+    width: 270px;
+    height: 52px;
+    display: flex;
+    justify-content: space-around;
+}
+.owl-prev {
+    position: relative;
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+
+    border: 2px solid #F1CDB3 !important;
+    border-radius: 50%;
+}
+
+.owl-prev::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 16px;
+
+    width: 14px;
+    height: 6px;
+
+    background-image: url("../assets/icons/arrow-left.svg");
+}
+
+.owl-next {
+    position: relative;
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+
+    border: 2px solid #F1CDB3 !important;
+    border-radius: 50%;
+}
+
+.owl-next::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 16px;
+
+    width: 14px;
+    height: 6px;
+
+    background-image: url("../assets/icons/arrow-right.svg");
+}
+
+@media (min-width: $tablet-size) {
+    .owl-prev {
+        position: absolute;
+        top: 25%;
+        left: -28px;
+
+    }
+    
+    .owl-next {
+        position: absolute;
+        top: 25%;
+        right: -28px;
+    }
+}
